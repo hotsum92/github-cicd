@@ -30,3 +30,8 @@ jobs:
 
     - name: Test
       run: go test -v ./...
+
+    - name: Check editorconfig
+      run: |
+        npm install -g editorconfig-checker
+        editorconfig-checker
