@@ -35,3 +35,8 @@ jobs:
       run: |
         npm install -g editorconfig-checker
         editorconfig-checker
+
+    - name: Run Gosec Security Scanner
+      uses: securego/gosec@master
+      with:
+        args: ./...
